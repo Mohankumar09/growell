@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growwell</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header id="header">
+        <nav>
+            <a href="#" class="logo">
+                <img src="images/growlogo.jpg" alt="Growwell Logo" class="logo-img"></a>
+
+                <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home" onclick="closeMenu()">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#our-products" class="dropbtn" onclick="closeMenu()">PRODUCTS</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#millets-section" onclick="closeMenu()">Millets</a></li> <!-- Updated ID -->
+                            <li><a href="#honey-section" onclick="closeMenu()">Honey</a></li> <!-- Updated ID -->
+                        </ul>
+                    </li>
+                    <li><a href="#millets-section" onclick="closeMenu()">MILLETS</a></li>
+                    <li><a href="#testimonials" onclick="closeMenu()">TESTIMONIALS</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">CONTACT</a></li>
+                </ul>
+        </nav>
+    </header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="carousel">
+        <div class="carousel-item active">
+            <img src="images/hero-bg.jpg" alt="Millet Image 1">
+            <div class="hero-content">
+                <h1>Discover the Power of Millets</h1>
+                <p>Nutritious, Delicious, and Versatile.</p>
+                <a href="#millets-section" class="btn-primary">Explore Millets</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Types of Millets Section -->
+<section id="millets-section" class="millets">
+    <h2>Millets</h2>
+    <div class="millets-container">
+        <div class="millet-item">
+            <img src="images/foxtail.png" alt="Foxtail Millet">
+            <div class="millet-info">
+                <h3>Foxtail Millet</h3>
+                <p>Rich in protein, dietary fiber, and antioxidants.</p>
+            </div>
+        </div>
+        <div class="millet-item">
+            <img src="images/barnyard.png" alt="Barnyard Millet">
+            <div class="millet-info">
+                <h3>Barnyard Millet</h3>
+                <p>Gluten-free, low in calories, and rich in calcium.</p>
+            </div>
+        </div>
+        <div class="millet-item">
+            <img src="images/sorghum.png" alt="Sorghum Millet">
+            <div class="millet-info">
+                <h3>Sorghum Millet</h3>
+                <p>High in fiber, protein, and iron.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Honey Section -->
+<section id="honey-section" class="millets"> <!-- Updated ID -->
+    <h2>Honey</h2>
+    <div class="millets-container">
+        <div class="millet-item">
+            <img src="images/honey2.jpg" alt="Foxtail Millet">
+            <div class="millet-info">
+                <!-- <h3>Honey</h3> -->
+                <h3>Kurinji Thinai Finest Quality Honey (250g)</h3>
+            </div>
+        </div>
+        <div class="millet-item">
+            <img src="images/honey3.jpg" alt="Barnyard Millet">
+            <div class="millet-info">
+                <!-- <h3>Honey</h3> -->
+                <h3>Kurinji Thinai Finest Quality Honey (500g).</h3>
+            </div>
+        </div>
+        <div class="millet-item">
+            <img src="images/honey4.jpg" alt="Sorghum Millet">
+            <div class="millet-info">
+                <!-- <h3>Honey</h3> -->
+                <h3>Kurinji Thinai Finest Quality Honey (1kg)</h3>
+            </div>
+        </div>
+        <div class="millet-item">
+            <img src="images/honey5.jpg" alt="Sorghum Millet">
+            <div class="millet-info">
+                <!-- <h3>Honey</h3> -->
+                <h3>Kurinji Thinai Premium Quality Honey (250g).</h3>
+            </div>
+        </div>
+        <div class="millet-item">
+            <img src="images/honey6.jpg" alt="Sorghum Millet">
+            <div class="millet-info">
+                <!-- <h3>Honey</h3> -->
+                <h3>Kurinji Thinai Premium Quality Honey (500g).</h3>
+            </div>
+        </div>
+        <div class="millet-item">
+            <img src="images/honey6.jpg" alt="Sorghum Millet">
+            <div class="millet-info">
+                <!-- <h3>Honey</h3> -->
+                <h3>Kurinji Thinai Premium Quality Honey (1kg).</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Featured Recipes Section -->
+    <!-- <section id="recipes" class="recipes">
+        <h2>Featured Recipes</h2>
+        <div class="recipes-container">
+            <div class="recipe">
+                <img src="images/recipe1.jpg" alt="Recipe 1">
+                <div class="recipe-info">
+                    <h3>Millet Salad</h3>
+                    <p>A fresh and healthy salad made with nutrient-rich millets.</p>
+                </div>
+            </div>
+            <div class="recipe">
+                <img src="images/recipe2.jpg" alt="Recipe 2">
+                <div class="recipe-info">
+                    <h3>Millet Porridge</h3>
+                    <p>Start your day with a warm, wholesome millet porridge.</p>
+                </div>
+            </div>
+            <div class="recipe">
+                <img src="images/recipe3.jpg" alt="Recipe 3">
+                <div class="recipe-info">
+                    <h3>Millet Stir-Fry</h3>
+                    <p>A quick and tasty stir-fry featuring a variety of vegetables and millets.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="why-choose-us">
+    <h2>Why Choose Us</h2>
+    <div class="reasons-container">
+        <div class="reason">
+            <img src="images/Quality  Icon.jpg" alt="Quality Icon">
+            <h3>Premium Quality</h3>
+            <p>We deliver only the best products, sourced from trusted farms with the highest quality standards.</p>
+        </div>
+        <div class="reason">
+            <img src="images/affordable-icon.jpg" alt="Affordable Icon">
+            <h3>Affordable Prices</h3>
+            <p>Our products are priced competitively, ensuring you get the best value for your money.</p>
+        </div>
+        <div class="reason">
+            <img src="images/Sustainable Icon.jpg" alt="Sustainable Icon">
+            <h3>Sustainability</h3>
+            <p>We are committed to sustainable farming practices that protect the environment and support farmers.</p>
+        </div>
+        <div class="reason">
+            <img src="images/customer-service-icon.jpg" alt="Customer Service Icon">
+            <h3>Excellent Customer Service</h3>
+            <p>Our customer support team is always available to assist you with any inquiries or issues.</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <p>"The millets from Millets Delight are top-notch! My family loves the quality and taste."</p>
+                <h4>Jane Doe</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I have never tasted millets like these before. They are so versatile and healthy!"</p>
+                <h4>John Smith</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Excellent service and fantastic products. Highly recommend to anyone looking for quality millets."</p>
+                <h4>Mary Johnson</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h1>Contact Us</h1>
+        <form action="">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-secondary">Send Message</button>
+        </form>
+    </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="#home">
+                <img src="images/growlogo.jpg" alt="Grow Well Logo">
+            </a>
+            <p>&copy; 2024 Millets Delight. All Rights Reserved.</p>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p>Email: <a href="mailto:info@milletsdelight.com">info@milletsdelight.com</a></p>
+            <p>Address: 123 Millets Street, Healthy Town</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://facebook.com" target="_blank" rel="noopener">
+                <img src="images/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">
+                <img src="images/instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/1234567890" target="_blank" rel="noopener">
+                <img src="images/whatsapp-icon.png" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+</footer>
